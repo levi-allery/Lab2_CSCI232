@@ -1,1 +1,1 @@
-# CSCI232_lab2
+# Lab2_CSCI232
