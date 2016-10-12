@@ -24,7 +24,7 @@ public class Driver {
         boolean done = false;
         boolean tableCreated = false;
 
-        while(!tableCreated) {
+        while(!tableCreated) { // User has to create a table greater then 0 to continue
             System.out.println("Enter size of has table: ");
             arraySize = scn.nextInt();
             if (arraySize <= 0) {
@@ -34,10 +34,10 @@ public class Driver {
                 tableCreated = true;
             }
         }
-        HashTable h = new HashTable(arraySize);
+        HashTable h = new HashTable(arraySize); // create a new hash table
         System.out.println("Enter initial number of items: ");
         items = scn.nextInt();
-        for (int i = 0; i < items; i++) {
+        for (int i = 0; i < items; i++) { //Randomly inserts numbers into table
             h.insert(i*i^2);
         }
         while (!done) {
